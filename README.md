@@ -7,7 +7,7 @@ Proje local bilgisayara kopyalandıktan sonra Eclipse veya IntelliJ IDEA üzerin
 Proje import edildikten sonra "src/test/java/com/framework/test" altındaki "Kampanyalar" class'ına gidilir.
 Class içindeki "kampanyalar_KategoriBazli" metodu sağ tıklanıp Run As menüsünde "TestNG Test" seçilir.
 
-##Selenium Grid ve Node'ların Docker üzerinde ayağa kaldırılması ve izlenilmesi
+## Selenium Grid ve Node'ların Docker üzerinde ayağa kaldırılması ve izlenilmesi
 
 Sırasıyla aşağıdaki komutlar çalıştırılır.
 
