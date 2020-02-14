@@ -52,7 +52,15 @@ public class TestBase {
                     EventFiringWebDriver eventDriver = new EventFiringWebDriver(new RemoteWebDriver(new URL(prop.getProperty("gridHubUrl")), new ChromeOptions())).register(new WebEventListener());
                     driver.set(eventDriver);
                 } else {
-                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe");
+                	if(System.getProperty("os.name").toLowerCase().contains("mac"))
+                	{ System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver");
+                		
+                		
+                	} else {
+                		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe");
+                	}
+                	
+                    
                     EventFiringWebDriver eventDriver = new EventFiringWebDriver(new ChromeDriver()).register(new WebEventListener());
                     driver.set(eventDriver);
                 }
